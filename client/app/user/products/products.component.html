@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <app-categories [category]="category"></app-categories>
+    </div>
+    <div class="col">
+      <div class="left-nav-container">
+        <h3 class="products-heading">PRODUCTS
+          <small>({{ filteredProducts?.length }})</small>
+        </h3>
+        <ng-container *ngIf="filteredProducts; else error">
+        <div class="row">
+          <div class="col-3" *ngFor="let p of filteredProducts">
+            <div class="card">
+              <div class="image">
+                <img class="card-img-top img-fluid" [src]="p.imageUrl" [alt]="p.title">
+              </div>
+            </div>
+            <hr class="product-divider">
+            <div class="img-desc row">
+              <div class="col-6">
+                <div style="font-size: 15px;font-weight: bold;">{{ p.title }}</div>
+                <small>{{ p.price | currency:'INR'}}</small>
+              </div>
+              <div class="col">
+                <div class="card-footer text-muted p-0">
+                  <!-- <button
+                      (click)="addToCart(p)"
+                      class="btn btn-outline-success btn-block btn-sm"
+                      placement="bottom"
+                      ngbTooltip="Add to cart">
+                        ADD
+                    </button> -->
+                  <!-- <div class="row no-gutters">
+                      <div class="col-4">
+                        <button class="btn btn-outline-success btn-block btn-sm quantity-btn" placement="bottom" ngbTooltip="Decrease quantity">
+                          -
+                        </button>
+                      </div>
+                      <div class="col quantity text-center">
+                        0
+                      </div>
+                      <div class="col-4">
+                        <button class="btn btn-outline-success btn-block btn-sm quantity-btn" placement="bottom" ngbTooltip="Increase quantity">
+                          +
+                        </button>
+                      </div>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </ng-container>
+        <ng-template #error>
+          {{ errMsg }}
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

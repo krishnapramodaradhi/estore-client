@@ -1,0 +1,36 @@
+@import "../../../_variables";
+
+.left-nav-container {
+  padding: 40px 14px 24px 24px;
+}
+
+.left-nav-heading {
+  font-family: "Oswald", sans-serif !important;
+}
+
+.left-nav-items {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .left-nav-link {
+    text-decoration: none;
+    color: $black;
+    font-size: 15px;
+
+    .left-nav-list {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+  .left-nav-link:hover {
+    color: $font-color;
+  }
+  .left-nav-link:active {
+    color: $font-color;
+  }
+}

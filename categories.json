@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5ac9d2c82ec62c52f4aab561"},"name":"Bread"}
+{"_id":{"$oid":"5ac9d2c82ec62c52f4aab562"},"name":"Dairy"}
+{"_id":{"$oid":"5ac9d2c82ec62c52f4aab563"},"name":"Vegetables"}
+{"_id":{"$oid":"5ac9d2c82ec62c52f4aab564"},"name":"Fruits"}
+{"_id":{"$oid":"5ac9d2c82ec62c52f4aab565"},"name":"Seasonings and Spices"}

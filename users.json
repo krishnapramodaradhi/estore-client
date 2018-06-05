@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5ab8d5457230f945c0306f2d"},"firstName":"pramod","lastName":"krishna","email":"krishna.pramod2@gmail.com","username":"pramod","password":"$2a$10$MsOAyli57A4mobjOkrKzU.K5aD1mBqu1ki3EjzCTWGF878iJAWYv.","role":"admin","__v":0}
+{"_id":{"$oid":"5aba35b87555924b2cda5e2d"},"firstName":"krishna","lastName":"pramod","email":"krishnapramodaradhi@gmail.com","username":"pramod123","password":"$2a$10$4Z3GpGkDaMy16Fr83LVkCe6cDiSzIsLFWpXf3n9gA4IHYN5MZfOdq","role":"user","__v":0}

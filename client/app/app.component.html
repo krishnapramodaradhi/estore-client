@@ -1,0 +1,7 @@
+<app-navbar-primary></app-navbar-primary>
+
+<ng-container *ngIf="userService.getUserData()?.role === 'admin'">
+  <app-navbar-secondary></app-navbar-secondary>
+</ng-container>
+<div *ngIf="showSpinner">Loading...</div>
+<router-outlet></router-outlet>

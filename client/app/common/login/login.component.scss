@@ -1,0 +1,44 @@
+@import "../../../_variables";
+
+.logo {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container {
+  padding: 40px;
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.reg-text {
+  padding: 20px 10px 10px 10px;
+  font-size: 13px;
+}
+
+.custom-checkbox {
+  margin-bottom: 20px;
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $black;
+  }
+}
+
+.modal-content {
+  border: 1px solid $white;
+  border-radius: 0;
+}
+
+.modal-animate {
+  animation: animateZoom 0.6s;
+}
+
+@keyframes animateZoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

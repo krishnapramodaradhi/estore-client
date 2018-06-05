@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/home/products"><h5>EStore</h5></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <ng-container *ngIf="userService.loggedIn(); else u">
+        <li class="nav-item">
+          <a routerLink="#" class="nav-link py-0 login">
+            <i class="fas fa-user-circle"></i>
+            <i class="name py-auto">
+              {{ userService.getUserData()?.firstName + ' ' + userService.getUserData()?.lastName }}
+            </i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-0 login" (click)="logout()">Logout</a>
+        </li>
+      </ng-container>
+      <ng-template #u>
+        <li class="nav-item">
+          <a class="nav-link py-0 login" (click)=open()>Login/Register</a>
+        </li>
+      </ng-template>
+      <!-- <li class="nav-item">
+        <a routerLink="user/cart" class="nav-link py-0">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge badge-pill">0</span>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,60 @@
+@import "../../../_variables";
+
+.products-heading {
+  font-family: Oswald !important;
+}
+
+.left-nav-container {
+  padding: 40px 14px 24px 24px;
+}
+
+.products-heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 31px;
+}
+
+.product-divider {
+  margin-bottom: 0;
+}
+
+.card {
+  .image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    img {
+      position: absolute;
+      background-size: cover;
+    }
+    .img-fluid {
+      height: 100%;
+    }
+  }
+}
+
+.card-footer {
+  background-color: white;
+  border-top: 0;
+  margin-top: 10px;
+}
+
+.fa-cart-plus {
+  font-size: 1.4em;
+}
+
+.fa-cart-plus:hover {
+  color: black;
+}
+
+.quantity {
+  top: 3px;
+  background-color: #28a745;
+  color: white;
+  height: 90%;
+}
+
+.quantity-btn:hover {
+  background-color: rgb(226, 226, 226);
+  color: #28a745;
+}

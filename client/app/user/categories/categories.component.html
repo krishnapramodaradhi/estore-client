@@ -1,0 +1,19 @@
+<div class="left-nav-container">
+  <h3 class="left-nav-heading">CATEGORIES</h3>
+  <hr class="divider">
+  <ng-container *ngIf="categories as cat; else error">
+    <ul class="left-nav-items">
+      <a class="left-nav-link" routerLink="/home/products">
+        <li class="left-nav-list">
+          All Categories
+        </li>
+      </a>
+      <a *ngFor="let c of cat" class="left-nav-link" routerLink="/home/products" [queryParams]="{ category: c.id }" [class.active]="category === c.id">
+        <li class="left-nav-list">{{c.name}}</li>
+      </a>
+    </ul>
+  </ng-container>
+  <ng-template #error>
+    {{ errMsg }}
+  </ng-template>
+</div>

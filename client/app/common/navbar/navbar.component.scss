@@ -1,0 +1,46 @@
+@import "../../../variables";
+
+nav {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.navbar {
+  border: 1px solid $border-color;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $font-color !important;
+    }
+    .nav-link:hover {
+      color: $black !important;
+    }
+  }
+}
+
+.bg-light {
+  background-color: $white !important;
+}
+
+.badge {
+  background: $orange-gradient;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.fa-user-circle {
+  padding-right: 3px;
+  font-size: 15px;
+}
+
+.name {
+  font-style: normal;
+}
+
+h5 {
+  font-family: 'Oswald', sans-serif;
+}
